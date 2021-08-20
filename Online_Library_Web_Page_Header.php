@@ -150,7 +150,7 @@ a {
 
   <a href="" class="grid-container-menu-name-a-link">
     <div class="grid-container-menu-name">
-      <h3 class="grid-container-menu-name-h3">menu type one</h3>
+      <h3 class="grid-container-menu-name-h3">Order a Book</h3>
     </div>
   </a>
 
