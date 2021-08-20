@@ -53,7 +53,6 @@
 			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non <br>
 			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 			<button class="submit-button-class">Click To Download</button>
-			<button class="submit-button-class">Click To Order</button>
 		</div>
 	</div>
 
