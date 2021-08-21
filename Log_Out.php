@@ -10,7 +10,7 @@
     	session_start();
     	session_destroy();
 
-      header("location: https://localhost/WEB Group Assignment/webpages/Home_Page.php");
+      header("location: https://localhost/Web assignment/Library_System_Website/Home_Page.php");
     }
 
 ?>
