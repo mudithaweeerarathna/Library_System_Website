@@ -145,7 +145,7 @@
 		</div>
 
 		<div class="grid-container-book-type-description">
-			<a href="Book_Catogaries_Action_And_Adventure.php">
+			<a href="Book_Catogarie_Action_And_Adventure.php">
 			<h2>Action And Adventure</h2>
 			<p>
 				A romance novel or romantic novel 

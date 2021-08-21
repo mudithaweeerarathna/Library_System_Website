@@ -81,7 +81,9 @@
 			<p style="padding-right: 45%;">
 				<?php echo $sql_data_array_book_description_type['0']['Book_Description']; ?>
 			</p>
-			<button class="submit-button-class">Click To Download</button>
+			<form action="Download.php">
+			<button name="view" value="view" class="submit-button-class">Click To View</button>
+			</form>
 		</div>
 	</div>
 
