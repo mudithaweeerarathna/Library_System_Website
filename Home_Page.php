@@ -95,11 +95,12 @@
 			?>
 			<p style="font-size: 65px; color: white;"><b>New To The Online Library</b></p>
 			<p style="font-size: 30px; color: white;">
-			Details about the benefit of joining <br>
-			the online library and other uses <br>
-			Lorem ipsum dolor sit amet, consectetur <br>
-			adipisicing elit, sed do eiusmod <br>
-			tempor incididunt ut labore et dolore magna <br>
+			Create an account to join to the library<br>
+			or sign in if you have an account created already<br>
+			This is a online library of the NSBM Green university<br>
+			you can order a book to keep assigned to you to<br>
+			collect when you order it here or<br>
+			you can read it online or you can download some books in pdf format
 			</p>
 			<p style="font-size: 28px; color: white; margin-top: 0px;"><?php echo $logged_in; ?></p>
 		</div>

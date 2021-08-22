@@ -148,7 +148,7 @@ a {
     </div>
   </a>
 
-  <a href="Order_New_Book.php" class="grid-container-menu-name-a-link">
+  <a href="Order_Online.php" class="grid-container-menu-name-a-link">
     <div class="grid-container-menu-name">
       <h3 class="grid-container-menu-name-h3">Order a Book</h3>
     </div>
@@ -162,7 +162,7 @@ a {
 
   <a href="Add_New_Book.php" class="grid-container-menu-name-a-link">
     <div class="grid-container-menu-name">
-      <h3 class="grid-container-menu-name-h3">Add new book</h3>
+      <h3 class="grid-container-menu-name-h3">My account</h3>
     </div>
   </a>
 
