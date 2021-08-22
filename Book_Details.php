@@ -1,5 +1,5 @@
 <?php  
-
+	session_start();
 //creting and check the connection to the database
 	$conn = mysqli_connect("localhost", "mmw", "mmw@thinkweb", "library_database");
 	if(!$conn) {

@@ -7,14 +7,14 @@
     echo 'connection error to the database';
   }
 
-  session_start();
+  
 
   //check if the session is empty and if the user is signed in or not
   if(empty($_SESSION)) {
-    $download_button = 'Log into Download the book';
+    //$Loged_in_not_div = 'YOU NEED TO LOGIN TO RESERVE BOOKS';
   } else {
-    $download_button = 'Click to Download';
-    
+    //$Loged_in_not_div = '';
+
     //get the username from the database
     $session_email = $_SESSION['user_email'];
     //echo $session_email;

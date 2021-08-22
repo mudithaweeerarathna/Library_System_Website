@@ -1,4 +1,24 @@
-<?php  ?>
+<?php  
+
+	//create the connection to the database
+	$conn = mysqli_connect('localhost', 'mmw', 'mmw@thinkweb', 'library_database');
+	if(!$conn) {
+		echo 'Connection error to the database';
+	}
+
+	session_start();
+	if(empty($_SESSION)) {
+		$Logged_in_not_div = 'YOU NEED TO LOGIN TO RESERVE OR ORDER BOOKS';
+	} else {
+		$Logged_in_not_div = '';
+	}
+
+
+	//check the session if the user is loged in or not
+
+	//taking the books from the database
+
+?>
 
 <!DOCTYPE html>
 <html>
@@ -41,10 +61,16 @@
 </head>
 <body>
 
-	<?php include 'Online_Library_Web_Page_Header.php'; ?>
 
-	<div style="background-color: red;">
-		<p style="text-align: center;"><b>YOU NEED TO LOGIN FIRST TO ORDER A BOOK OR DOWNLOAD A BOOK</b></p>
+	<?php include 'Online_Library_Web_Page_Header.php'; ?>
+	<?php  
+
+
+
+	?>
+
+	<div class="logned-in-not-div">
+		<p style="text-align: center; color:red;"><b><?php echo $Logged_in_not_div; ?></b></p>
 	</div>
 
 	<div class="division" style="background-color: whitesmoke;">
@@ -69,6 +95,9 @@
 				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 			</p>
 			</div>
 			<div class="grid-container-buttons">

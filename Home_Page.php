@@ -1,4 +1,7 @@
 <?php  
+
+	session_start();
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -70,6 +73,40 @@
 
 	.grid-container-book-type-description:hover {
 		background-color: #F8F8FF;
+	}
+
+	.grid-container-reserve-online-section {
+		display: grid;
+		grid-template-columns: 50% 50%;
+		background-color: #ECFFDC;
+		padding-top: 25px;
+		padding-bottom: 25px;
+		padding-left: 70px;
+		padding-right: 70px;
+	}
+
+	.grid-container-reserve-online-section-description-section {
+		text-align: center;
+
+	}
+
+	.grid-container-reserve-online-section-p {
+		font-size: 30px;
+		color: white;
+		background-color: #A9A9A9;
+		margin: 0px;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		padding-left: 30px;
+		padding-right: 30px;
+		margin-bottom:  5px;
+	}
+
+	.grid-container-reserve-online-section-p:hover {
+		background-color: #F5F5F5;
+		color: black;
+		border: solid 2px;
+		border-color: #A9A9A9;
 	}
 
 </style>
@@ -250,6 +287,30 @@
 			</a>
 		</div>
 
+	</div>
+
+	<!--HOME PAGE BACKGROUND IMAGE AND DETAILS ABOUT ORDERING THE BOOK FROM THE LIBRARY USING THE WEBSITES-->
+	<div class="grid-container-reserve-online-section">
+		<div class="grid-container-reserve-online-section-image-section">
+			 <img src="https://i.imgur.com/FILGZL1.jpg" style="height: 950px; width: 650px; border: solid 2px;">
+		</div>
+		<div class="grid-container-reserve-online-section-description-section">
+			<p style="font-family: Crimson Text; font-size: 90px; text-align: center; margin-top: 210px; margin-bottom: 10px; margin-right: 150px;">
+				Reserve Your
+			</p>
+			<p style="font-family: Crimson Text; font-size: 90px; text-align: center; margin-top: 10px; margin-left: 150px;">
+				Book Online
+			</p>
+			<p style="font-family: Crimson Text; font-size: 30px; color: gray;">
+				you can reserve your book using the <br>
+				this online website so you can take the <br>
+				book when you come into the university premises <br>
+				Before Order you Need to LOGIN 
+			</p>
+			<a class="grid-container-reserve-online-section-p" href="">
+				Reserve a Book
+			</a>
+		</div>
 	</div>
 
 	<!--INCLUDING THE FOOTER FROM "Online_Library_Web_Page_Footer.php"-->
