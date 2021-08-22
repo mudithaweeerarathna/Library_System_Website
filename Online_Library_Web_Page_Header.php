@@ -160,7 +160,7 @@ a {
     </div>
   </a>
 
-  <a href="Add_New_Book.php" class="grid-container-menu-name-a-link">
+  <a href="My_Account.php" class="grid-container-menu-name-a-link">
     <div class="grid-container-menu-name">
       <h3 class="grid-container-menu-name-h3">My account</h3>
     </div>

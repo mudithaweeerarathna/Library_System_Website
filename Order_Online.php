@@ -43,11 +43,6 @@
 		padding-bottom: 40px;
 	}
 
-	.grid-container-image {
-		height: 270px;
-		width: 240px;
-	}
-
 	.grid-container-buttons {
 		margin-left: 15%;
 		margin-right: 15%;
@@ -76,7 +71,7 @@
 	<div class="division" style="background-color: whitesmoke;">
 		<div class="grid-container">
 			<div class="grid-container-image">
-				<img style="padding-left: 10px;" src="https://i.imgur.com/MFF46ov.jpg[/img]">
+				<img style="padding-left: 10px;" src="https://i.imgur.com/ucgPkW7.jpg[/img]">
 			</div>
 			<div class="grid-container-details">
 				<h2 style="margin-top: 4px; margin-bottom:7px;">Name of the book</h2>
