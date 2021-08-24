@@ -30,10 +30,6 @@
 	$sql_data_array_book_image = mysqli_fetch_all($sql_details_result_book_image, MYSQLI_ASSOC);
 	//print_r($sql_data_array_book_image);
 
-	//code to run when the user cicks the order button to order the book
-	
-
-
 ?>
 
 <!DOCTYPE html>
@@ -85,10 +81,7 @@
 			<p style="padding-right: 45%;">
 				<?php echo $sql_data_array_book_description_type['0']['Book_Description']; ?>
 			</p>
-			<form action="Book_Details.php">
-			<button name="view" value="view" class="submit-button-class">Click To View</button>
-			<button name="order" value="order" class="submit-button-class">Click To Order</button>
-			</form>
+			<a href="Order_Book_Php_Codes.php?id=<?php echo $Book_id; ?>" class="submit-button-class">Click to Order</a>
 		</div>
 	</div>
 

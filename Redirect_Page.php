@@ -41,7 +41,7 @@
     <a href="Log_in_Web_Page.php">Log In</a>
   </button>
   <button class="submit-button-class">
-    <a href="Sign_in_Web_Page">Sign In</a>
+    <a href="Sign_in_Web_Page.php">Sign In</a>
   </button>
   </div>
 

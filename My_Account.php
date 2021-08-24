@@ -39,7 +39,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>My Account NAME</title>
+	<title><?php echo $user_details_result['0']['First_Name'] . ' ' . $user_details_result['0']['Last_Name']; ?></title>
 	<link rel="stylesheet" type="text/css" href="stylesheet.css">
 </head>
 <style>
@@ -86,7 +86,7 @@
 				<hr style="margin-bottom: 20px;">
 				<p style="font-size: 18px; margin-top: 4px; margin-bottom:7px;"><b>E-mail address: </b><?php echo $user_details_result['0']['E_mail']; ?></p>
 				<p style="font-size: 18px; margin-top: 4px; margin-bottom:7px;"><b>Batch number: </b><?php echo $user_batch_details_result['0']['Batch_No']; ?></p>
-				<p style="font-size: 18px; margin-top: 4px; margin-bottom:7px;"><b>Library Id number: </b><?php echo $user_batch_details_result['0']['Library_User_Id']; ?></p>
+				<p style="font-size: 18px; margin-top: 4px; margin-bottom:7px;"><b>Library ID number: </b><?php echo $user_batch_details_result['0']['Library_User_Id']; ?></p>
 			</div>
 			<div class="grid-container-buttons">
 			<form action="My_Account.php" method="POST">

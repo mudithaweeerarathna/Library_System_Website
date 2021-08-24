@@ -72,7 +72,7 @@
 
 	?>
 
-	<div class="logned-in-not-div">
+	<div>
 		<p style="text-align: center; color:red;"><b><?php echo $Logged_in_not_div; ?></b></p>
 	</div>
 
