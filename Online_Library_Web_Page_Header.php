@@ -123,7 +123,7 @@ a {
         $log_in_out_href_link = 'Log_in_Web_Page.php';
         $log_in_out_h3 = 'Log in';
       } else {
-        $log_in_out_href_link = 'Log_out.php';
+        $log_in_out_href_link = 'My_Account.php';
         $log_in_out_h3 = 'Log out ' . '(' . $Full_name . ')';
       }
 
