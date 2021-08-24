@@ -14,6 +14,7 @@
 		$Logged_in_not_div = '';
 	}
 
+
 	//taking the books id from the table books_details from the  database
 	$sql_getting_books_id = "SELECT * FROM book_name_author";
 	$sql_getting_books_id_query = mysqli_query($conn,$sql_getting_books_id);
