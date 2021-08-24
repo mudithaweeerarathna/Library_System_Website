@@ -6,6 +6,7 @@
 		echo 'Connection error to the database';
 	}
 
+	//start the session and check if the user is loged in or not
 	session_start();
 	if(empty($_SESSION)) {
 		$Logged_in_not_div = 'YOU NEED TO LOGIN TO RESERVE OR ORDER BOOKS';
@@ -13,10 +14,13 @@
 		$Logged_in_not_div = '';
 	}
 
+	//taking the books id from the table books_details from the  database
+	$sql_getting_books_id = "SELECT * FROM book_name_author";
+	$sql_getting_books_id_query = mysqli_query($conn,$sql_getting_books_id);
+	$books_details_result = mysqli_fetch_all($sql_getting_books_id_query, MYSQLI_ASSOC);
+	//print_r($books_details_result);
 
-	//check the session if the user is loged in or not
 
-	//taking the books from the database
 
 ?>
 
@@ -38,17 +42,21 @@
 		display: grid;
 		grid-template-columns: 15% 70% 15%;
 
-		margin-top: 50px;
+		margin-top: 20px;
 		padding-top: 20px;	
-		padding-bottom: 40px;
+		padding-bottom: 20px;
 	}
 
-	.grid-container-buttons {
-		margin-left: 15%;
-		margin-right: 15%;
-		margin-top: 30%;
-		margin-bottom: 30%;
-		text-align: center;
+	.submit-button-class {
+		margin-top: 150px; 
+		margin-bottom: 150px; 
+		margin-right: 40px; 
+		margin-left: 40px;
+	}
+
+	.book-image {
+		height: 300px;
+		width: 198.99px;
 	}
 
 </style>
@@ -68,39 +76,46 @@
 		<p style="text-align: center; color:red;"><b><?php echo $Logged_in_not_div; ?></b></p>
 	</div>
 
-	<div class="division" style="background-color: whitesmoke;">
-		<div class="grid-container">
+	
+	<div class="division">
+	<?php foreach($books_details_result as $books) { ?>
+	<?php  
+		$Book_Id = $books['Book_Id']; //declare books id to a variable
+		//print_r($books);
+
+		//getting the book type and description from the table book_description_type
+		$sql_getting_book_type_description = "SELECT * FROM book_description_type WHERE Book_Id = '$Book_Id'";
+		$sql_getting_book_type_description_array = mysqli_query($conn, $sql_getting_book_type_description);
+		$book_type_description_result = mysqli_fetch_all($sql_getting_book_type_description_array, MYSQLI_ASSOC);
+		//print_r($book_type_description_result);
+
+		//getting the book image link
+		$sql_getting_book_image_link = "SELECT * FROM book_image WHERE Book_Id = '$Book_Id'";
+		$sql_getting_book_image_link_array = mysqli_query($conn, $sql_getting_book_image_link);
+		$book_image_link_result = mysqli_fetch_all($sql_getting_book_image_link_array, MYSQLI_ASSOC);
+		//print_r($book_image_link_result);
+
+	?>
+		<div class="grid-container" style="background-color: whitesmoke;">
 			<div class="grid-container-image">
-				<img style="padding-left: 10px;" src="https://i.imgur.com/ucgPkW7.jpg[/img]">
+				<img class="book-image" style="padding-left: 10px;" src="<?php echo $book_image_link_result['0']['Book_Image_Src']; ?>" alt="<?php echo $book_image_result['0']['Book_Image_Alt']; ?>">
 			</div>
 			<div class="grid-container-details">
-				<h2 style="margin-top: 4px; margin-bottom:7px;">Name of the book</h2>
-				<h4 style="margin-top: 4px; margin-bottom:7px;">Author of the book</h4>
-				<h4 style="margin-top: 4px; margin-bottom:7px;">Type of the book</h4>
+				<h2 style="margin-top: 4px; margin-bottom:7px;"><?php echo $books['Book_Name']; ?></h2>
+				<h4 style="margin-top: 4px; margin-bottom:7px;"><?php echo $books['Book_Author']; ?></h4>
+				<h4 style="margin-top: 4px; margin-bottom:7px;"><?php echo $book_type_description_result['0']['Book_Type']; ?></h4>
 				<hr line="75%">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			</p>
+				<p>
+					<?php echo $book_type_description_result['0']['Book_Description']; ?>
+				</p>
 			</div>
-			<div class="grid-container-buttons">
-				<button class="submit-button-class">Download the Book</button> <br>
-				<button style="margin-top: 10px;" class="submit-button-class">Order the Book</button>
+			<div class="submit-button-class">
+				<a href="https://localhost/Web%20assignment/Library_System_Website/book_details.php?id=<?php echo $Book_Id; ?>">Order the Book</a>
 			</div>
 		</div>
+	<?php } ?>
 	</div>
+
 
 
 
