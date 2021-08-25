@@ -82,6 +82,7 @@
 				<?php echo $sql_data_array_book_description_type['0']['Book_Description']; ?>
 			</p>
 			<a href="Order_Book_Php_Codes.php?id=<?php echo $Book_id; ?>" class="submit-button-class">Click to Order</a>
+			<a href="view_Book_Php_Codes.php?id=<?php echo $Book_id; ?>" class="submit-button-class">Click to View(PDF)</a>
 		</div>
 	</div>
 
