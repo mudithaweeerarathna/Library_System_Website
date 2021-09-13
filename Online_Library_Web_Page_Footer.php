@@ -31,6 +31,7 @@
 	<div class="grid-container-sections" style="margin-left: 10px;">
 		<h3 style="text-align: center;">About</h3>
 		<p>
+			kollo aussaganna epa najiii 
 			Lorem ipsum dolor sit amet, consectetur <br>
 			adipisicing elit, sed do eiusmod <br>
 			tempor incididunt ut labore et do <br>
@@ -68,7 +69,7 @@
 		<h3 style="text-align:center;">Created By</h3>
 		<p>
 			R.D.P.A Pereradix (21251) <br>
-			name one sr number <br>
+			W.A.B.G Silva (21420)<br>
 			M.M.Weerarathna (21435) <br>
 			R.M.R Fernando (21318) <br>
 			D.C.V Dhambarage (21437) <br>

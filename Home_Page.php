@@ -30,7 +30,7 @@
 		position: relative;
 		font-family: Crimson Text;
 		color: #FFF5EE;
-		margin-top: 10px;
+		margin-top: 0px;
 	}
 
 	.home-page-background-image-on-text {
@@ -292,7 +292,7 @@
 	<!--HOME PAGE BACKGROUND IMAGE AND DETAILS ABOUT ORDERING THE BOOK FROM THE LIBRARY USING THE WEBSITES-->
 	<div class="grid-container-reserve-online-section">
 		<div class="grid-container-reserve-online-section-image-section">
-			 <img src="https://i.imgur.com/FILGZL1.jpg" style="height: 950px; width: 650px; border: solid 2px;">
+			 <img src="https://i.imgur.com/FILGZL1.jpg" style="height: 950px; width: 650px; border:;">
 		</div>
 		<div class="grid-container-reserve-online-section-description-section">
 			<p style="font-family: Crimson Text; font-size: 90px; text-align: center; margin-top: 210px; margin-bottom: 10px; margin-right: 150px;">

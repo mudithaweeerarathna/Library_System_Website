@@ -49,6 +49,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 <style>
 body {
   font-family: Source Sans Pro;
@@ -65,7 +70,7 @@ a {
 .grid-container-header {
   display: grid;
   grid-template-columns: auto auto auto;
-  background-color: #90EE90; 
+  background-color: #FFE4C4;  /*uda paata */
 }
 
 .grid-container-logo-img {
@@ -78,23 +83,19 @@ a {
 }
 
 .grid-container-accounts-link:hover {
-  background-color: #00FA9A;
+  background-color: #00FA9A; 
 }
 
 .grid-container-header-menu {
   display: grid;
   grid-template-columns: auto auto auto auto;
-  background-color: #F0FFF0; 
+  background-color: #FFFACD; /*yta paata */
   text-align: center;
-  border: solid;
-  border-color: black;
-  border-bottom: 0px;
-  border-left: 0px;
-  border-right: 0px;
+
 }
 
 .grid-container-menu-name-a-link:hover {
-  background-color: #00FA9A;
+  background-color: #F0E68C; 
 }
 
 .grid-container-menu-name-h3 {
@@ -112,7 +113,7 @@ a {
     <img style="height: 100px; width: 100px;" src="https://i.imgur.com/UmY5PqQ.png">
   </div>
   <div class="grid-container-name">
-    <h1 style="margin-bottom: 0px; margin-top: 15px;"><b>Online Library</b></h1>
+    <h1 style="margin-bottom: 0px; margin-top: 15px; font-family: Poppin;"><b>ONLINE LIBRARY</b></h1>
     <p>Created by NSBM Green University Students</p>
   </div>
   <div class="grid-container-accounts">

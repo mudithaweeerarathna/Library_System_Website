@@ -17,7 +17,4 @@ header('Accept-Ranges: bytes');
 // Read the file
 @readfile($file);
 
-
-
-
 ?>
