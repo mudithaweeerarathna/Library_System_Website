@@ -1,7 +1,7 @@
 <?php  
 
   //creating and check the connection to the database
-  $conn = mysqli_connect("localhost", "mmw", "mmw@thinkweb", "library_database");
+  $conn = mysqli_connect("localhost", "root", "", "library_database");
   
   if(!$conn) {
     echo 'connection error to the database';
@@ -107,8 +107,14 @@ a
   height: 40px;
 }
 
-.grid-container-menu-name-a-link:hover {
+.grid-container-menu-name-a-link:hover 
+{
   background-color: #B1A296; 
+}
+
+.grid-container-menu-name-h3:hover
+{
+
 }
 
 .grid-container-menu-name-h3 {
