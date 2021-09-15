@@ -1,7 +1,7 @@
 <?php  
 
 	//create the connection to the database
-	$conn = mysqli_connect('localhost', 'mmw', 'mmw@thinkweb', 'library_database');
+	$conn = mysqli_connect("localhost", "root", "", "library_database");
 	if(!$conn) {
 		echo 'Connection error to the database';
 	}
@@ -111,7 +111,7 @@
 				</p>
 			</div>
 			<div class="submit-button-class">
-				<a href="https://localhost/Web%20assignment/Library_System_Website/book_details.php?id=<?php echo $Book_Id; ?>">Order the Book</a>
+				<a href="https://localhost/Library_System_Website/book_details.php?id=<?php echo $Book_Id; ?>">Order the Book</a>
 			</div>
 		</div>
 	<?php } ?>

@@ -3,7 +3,7 @@
 $Book_Id = $_GET['id'];
 
 // Store the file name into variable
-$file = $Book_Id . '.pdf';
+$file = 'http://www.africau.edu/images/default/sample.pdf';
   
 // Header content type
 header('Content-type: application/pdf');

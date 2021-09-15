@@ -1,6 +1,6 @@
 <?php  
 
-  $conn = mysqli_connect("localhost", "mmw", "mmw@thinkweb", "library_database");
+  $conn = mysqli_connect("localhost", "root", "", "library_database");
   
   if(!$conn) {
     echo 'connection error to the database';
@@ -33,7 +33,7 @@
       $enter_detils_table = "INSERT INTO user_details(User_Id, First_Name, Last_Name, E_mail, Password) VALUES('$StudentId', '$F_name', '$L_name', '$email', '$password')";
       mysqli_query($conn, $enter_detils_table);
 
-      header("location: https://localhost/Web%20assignment/Library_System_Website/Log_In_Web_Page.php");
+      header("location: https://localhost/Library_System_Website/Log_In_Web_Page.php");
 
     }
   }
@@ -90,7 +90,7 @@
 <?php include 'Online_Library_Web_Page_Header.php' ?>
 
 
-<h3 style="text-align: center;">Sign In</h3>
+<h3 style="text-align: center;">Sign Up</h3>
 
 <div class="container">
   <form action="Sign_in_Web_Page.php" method="POST">

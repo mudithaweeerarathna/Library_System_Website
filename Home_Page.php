@@ -307,7 +307,7 @@
 				book when you come into the university premises <br>
 				Before Order you Need to LOGIN 
 			</p>
-			<a class="grid-container-reserve-online-section-p" href="https://localhost/Web assignment/Library_System_Website/Order_Online.php"> Reserve a Book
+			<a class="grid-container-reserve-online-section-p" href="https://localhost/Library_System_Website/Order_Online.php"> Reserve a Book
 			</a>
 		</div>
 	</div>
