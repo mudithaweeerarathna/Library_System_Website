@@ -43,15 +43,7 @@
 
 		<h3>About</h3>
 		<p>
-			Lorem ipsum dolor sit amet, consectetur <br>
-			adipisicing elit, sed do eiusmod <br>
-			tempor incididunt ut labore et do <br>
-			lore magna aliqua. Ut enim ad minim <br>
-			veniam, quis nostrud exercitation <br>
-			ullamco laboris nisi ut aliquip.
-			lore magna aliqua. Ut enim ad minim <br>
-			veniam, quis nostrud exercitation <br>
-			ullamco laboris nisi ut aliquip.
+			We're the first ever online library in Sri Lanka,<br> we made this for a project in Web application development
 		</p>
 	</div>
 

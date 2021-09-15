@@ -30,7 +30,7 @@
 	//if user clicks the log out button
 	if(isset($_POST['Log_Out'])) {
 		session_destroy();
-		header("location: https://localhost/Web assignment/Library_System_Website/Home_Page.php");
+		header("location: https://localhost/Library_System_Website/Home_Page.php");
 	}
 
 

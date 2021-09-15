@@ -43,7 +43,7 @@
 				$_SESSION['loged_in'] = 'success'; //created a session for log in success
 				$_SESSION['user_email'] = $email; //saving the users entered email as an session
 		
-				header("location: https://localhost/Web assignment/Library_System_Website/My_Account.php"); //log in success web page
+				header("location: https://localhost/Library_System_Website/My_Account.php"); //log in success web page
 	
 		} else {
 				$error['password'] = 'Entered password is incorrect';
