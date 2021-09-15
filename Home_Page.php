@@ -8,7 +8,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Home_Page</title>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Lobster&display=swap" rel="stylesheet">
 <style>
@@ -83,6 +83,11 @@
 		padding-bottom: 25px;
 		padding-left: 70px;
 		padding-right: 70px;
+	}
+
+	.reserve
+	{
+		font-size: 50px;
 	}
 
 	.grid-container-reserve-online-section-description-section {
@@ -308,7 +313,7 @@
 				Before Order you Need to LOGIN 
 			</p>
 			<a class="grid-container-reserve-online-section-p" href="https://localhost/Web assignment/Library_System_Website/Order_Online.php">
-				Reserve a Book
+				<p class=reserve>Reserve a Book</p>
 			</a>
 		</div>
 	</div>

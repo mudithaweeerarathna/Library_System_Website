@@ -8,7 +8,9 @@
   	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
 <style >
 	
-	.grid-container-footer {
+	.grid-container-footer 
+	{
+		margin-top: 100px;
 		display: grid;
 		grid-template-columns: 25% 25% 25% 25%;
 		background-color: #708090;
@@ -22,16 +24,25 @@
 		padding-left: 5px;
 		padding-right: 5px;
 	}
+	.grid-container-sections
+	{
+		margin-left: 10px;
+		text-align: center;
+	}
+	h3.p
+	{
+		text-align:center;
+	}
 
 </style>
 </head>
 <body>
 
 <div class="grid-container-footer">
-	<div class="grid-container-sections" style="margin-left: 10px;">
-		<h3 style="text-align: center;">About</h3>
+	<div class="grid-container-sections">
+
+		<h3>About</h3>
 		<p>
-			kollo aussaganna epa najiii 
 			Lorem ipsum dolor sit amet, consectetur <br>
 			adipisicing elit, sed do eiusmod <br>
 			tempor incididunt ut labore et do <br>
@@ -41,20 +52,20 @@
 			lore magna aliqua. Ut enim ad minim <br>
 			veniam, quis nostrud exercitation <br>
 			ullamco laboris nisi ut aliquip.
-
 		</p>
 	</div>
+
 	<div class="grid-container-sections">
-		<h3 style="Text-align: center;">Contact</h3>
-		<p style="text-align: center;">
-			<a href="https://www.facebook.com"><img src="https://i.imgur.com/3FxKs5Q.png" class="icons"></a>
+		<h3>Contact</h3>
+		<p>	<a href="https://www.facebook.com"><img src="https://i.imgur.com/3FxKs5Q.png" class="icons"></a>
 			<a href="https://www.instagram.com"><img src="https://i.imgur.com/V7xPtxw.png" class="icons"></a>
 			<a href="https://www.gmail.com"><img src="https://i.imgur.com/4AkWoB1.png" class="icons"></a>
 			<a href="https:://www.twitter.com"><img src="https://i.imgur.com/VWJIIMV.png" class="icons"></a>
 		</p>
 	</div>
+
 	<div class="grid-container-sections">
-		<h3 style="text-align:center;">Other</h3>
+		<h3>Other</h3>
 		<p>
 			other details that need to include 
 			in the website Lorem ipsum dolor sit 
@@ -65,8 +76,9 @@
 			rcitation ullamco laboris nisi ut a
 		</p>
 	</div>
-	<div class="grid-container-sections" style="text-align: center;">
-		<h3 style="text-align:center;">Created By</h3>
+
+	<div class="grid-container-sections">
+		<h3>Created By</h3>
 		<p>
 			R.D.P.A Pereradix (21251) <br>
 			W.A.B.G Silva (21420)<br>

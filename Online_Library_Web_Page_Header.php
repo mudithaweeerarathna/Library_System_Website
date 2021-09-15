@@ -55,52 +55,79 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 <style>
-body {
+body 
+{
   font-family: Source Sans Pro;
   margin: 0px;
   border: 0px;
 
 }
 
-a {
+a 
+{
   color: black;
   text-decoration: none;
 }
 
-.grid-container-header {
+.grid-container-header 
+{
   display: grid;
   grid-template-columns: auto auto auto;
-  background-color: #FFE4C4;  /*uda paata */
+  background-color: #4E4E50;  /*uda paata */
 }
 
-.grid-container-logo-img {
+.grid-container-logo-img 
+{
   height: 100px;
   width:  auto;
 }
 
-.grid-container-accounts-link {
-  padding: 8px;
+.grid-container-accounts-link 
+{
+  
 }
 
-.grid-container-accounts-link:hover {
-  background-color: #00FA9A; 
+.grid-container-accounts-link:hover /*login,sign*/ 
+{
+  font-weight: bold;
 }
 
-.grid-container-header-menu {
+.signlogin
+{
+  margin-top: 22px;
+  font-size: 15px;
+}
+
+.grid-container-header-menu 
+{
   display: grid;
   grid-template-columns: auto auto auto auto;
-  background-color: #FFFACD; /*yta paata */
+  background-color: #5D5C61; /*yta paata */
   text-align: center;
-
+  height: 40px;
 }
 
 .grid-container-menu-name-a-link:hover {
-  background-color: #F0E68C; 
+  background-color: #B1A296; 
 }
 
 .grid-container-menu-name-h3 {
-  margin-top: 13px;
-  margin-bottom: 13px;
+  margin-top: 8px;
+  font-size: 17px;
+}
+
+.span1
+{
+  font-family: crimson text;
+  font-size: 50px;
+  font-weight: bold:;
+  color: white;
+}
+.span2
+{
+  font-family: cambria;
+  font-size: 14px;
+  color: white;
 }
 
 </style>
@@ -110,11 +137,11 @@ a {
 <!--HEADER GRID-INFO-->
 <div class="grid-container-header" style="text-align: center;">
   <div class="grid-container-logo">
-    <img style="height: 100px; width: 100px;" src="https://i.imgur.com/UmY5PqQ.png">
+    <img style="height: 100px; width: 100px;" src="Black.png">
   </div>
   <div class="grid-container-name">
-    <h1 style="margin-bottom: 0px; margin-top: 15px; font-family: Poppin;"><b>ONLINE LIBRARY</b></h1>
-    <p>Created by NSBM Green University Students</p>
+    <p><span class="span1">ONLINE LIBRARY</span><br><span class="span2">Created by NSBM Green University Students</span></p> 
+  
   </div>
   <div class="grid-container-accounts">
 
@@ -130,8 +157,9 @@ a {
 
     ?>
 
-      <h3><div><a href="Sign_in_Web_Page.php" class="grid-container-accounts-link">Sign in</a></div></h3>
-      <h3><div><a href="<?php echo $log_in_out_href_link; ?>" class="grid-container-accounts-link"><?php echo $log_in_out_h3; ?></a></div></h3>
+      <h3 class="signlogin"><div><a href="Sign_in_Web_Page.php" class="grid-container-accounts-link">Sign in</a></div></h3>
+
+      <h3 class="signlogin"><div><a href="<?php echo $log_in_out_href_link; ?>" class="grid-container-accounts-link"><?php echo $log_in_out_h3; ?></a></div></h3>
   </div>
 </div>
 
@@ -145,7 +173,7 @@ a {
 
   <a href="Book_Catogaries.php" class="grid-container-menu-name-a-link">
     <div class="grid-container-menu-name">
-      <h3 class="grid-container-menu-name-h3">Book Catogaries</h3>
+      <h3 class="grid-container-menu-name-h3">Book Categories</h3>
     </div>
   </a>
 
