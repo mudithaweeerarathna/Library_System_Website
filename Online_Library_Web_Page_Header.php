@@ -137,9 +137,10 @@ a
 <!--HEADER GRID-INFO-->
 <div class="grid-container-header" style="text-align: center;">
   <div class="grid-container-logo">
-    <img style="height: 100px; width: 100px;" src="Black.png">
+    <img style="height: 100px; width: 100px; margin-top: 10px;" src="https://i.imgur.com/fCZCCDh.png[/img]">
   </div>
-  <div class="grid-container-name">
+
+<div class="grid-container-name">
     <p><span class="span1">ONLINE LIBRARY</span><br><span class="span2">Created by NSBM Green University Students</span></p> 
   
   </div>

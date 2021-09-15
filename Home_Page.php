@@ -85,11 +85,6 @@
 		padding-right: 70px;
 	}
 
-	.reserve
-	{
-		font-size: 50px;
-	}
-
 	.grid-container-reserve-online-section-description-section {
 		text-align: center;
 
@@ -312,8 +307,7 @@
 				book when you come into the university premises <br>
 				Before Order you Need to LOGIN 
 			</p>
-			<a class="grid-container-reserve-online-section-p" href="https://localhost/Web assignment/Library_System_Website/Order_Online.php">
-				<p class=reserve>Reserve a Book</p>
+			<a class="grid-container-reserve-online-section-p" href="https://localhost/Web assignment/Library_System_Website/Order_Online.php"> Reserve a Book
 			</a>
 		</div>
 	</div>
