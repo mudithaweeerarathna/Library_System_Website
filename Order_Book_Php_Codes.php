@@ -1,6 +1,6 @@
 <?php  
 	
-	$conn = mysqli_connect('localhost', 'mmw', 'mmw@thinkweb', 'library_database');
+	$conn = mysqli_connect("localhost", "root", "", "library_database");
 
 	//start the session to take the user id
 	session_start();

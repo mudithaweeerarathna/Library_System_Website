@@ -1,6 +1,6 @@
 <?php  
 
-	$conn = mysqli_connect("localhost", "mmw", "mmw@thinkweb", "library_database");
+	$conn = mysqli_connect("localhost", "root", "", "library_database");
   
     if(!$conn) {
     	echo 'connection error to the database';

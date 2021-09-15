@@ -1,7 +1,7 @@
 <?php  
 
 	//making the connection and check for the connection
-	$conn = mysqli_connect('localhost', 'mmw', 'mmw@thinkweb', 'library_database');
+	$conn = mysqli_connect("localhost", "root", "", "library_database");
 	if(!$conn) {
 		echo 'Database Connection error';
 	}$User_email;
