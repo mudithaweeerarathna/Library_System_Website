@@ -38,10 +38,10 @@
 	 <p style="font-size: 23px; color: red;"><b>YOU ARE NOT LOGGED IN</b></p>
    <p style="font-size: 23px;"><b>CREATE A ACCOUNT BY SIGING IN OR LOG IN IF ALREADY HAVE AN ACCOUNT</b></p>
    <button class="submit-button-class">
-    <a href="Log_in_Web_Page.php">Log In</a>
+    <a href="https://localhost/Library_System_Website/Log_in_Web_Page.php">Log In</a>
   </button>
   <button class="submit-button-class">
-    <a href="Sign_in_Web_Page.php">Sign In</a>
+    <a href="https://localhost/Library_System_Website/Sign_in_Web_Page.php">Sign In</a>
   </button>
   </div>
 

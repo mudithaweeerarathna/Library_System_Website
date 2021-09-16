@@ -26,7 +26,7 @@
 		$enter_details = "INSERT INTO user_book_order(User_Id, Book_Order_id) VALUES ('$User_Id', '$Book_Id')";
 		mysqli_query($conn, $enter_details);
 
-		header("location: https://localhost/Web assignment/Library_System_Website/My_Account.php");	
+		header("location: https://localhost/Library_System_Website/My_Account.php");	
 	}
 
 

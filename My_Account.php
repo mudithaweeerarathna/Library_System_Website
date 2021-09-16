@@ -22,10 +22,12 @@
 	$User_Id = $user_details_result['0']['User_Id'];
 	//echo $User_Id;
 
-	$get_user_batch_details = "SELECT * FROM user_batch_details WHERE User_Id = '$User_Id'";
-	$get_user_batch_details_query = mysqli_query($conn, $get_user_batch_details);
-	$user_batch_details_result = mysqli_fetch_all($get_user_batch_details_query, MYSQLI_ASSOC);
-	//print_r($user_batch_details_result);
+	//take the ordered books from the database
+	$get_ordered_books = "SELECT * FROM user_book_order WHERE User_Id = '$User_Id'";
+	$get_ordered_books_array = mysqli_query($conn, $get_ordered_books);
+	$get_ordered_books_result = mysqli_fetch_all($get_ordered_books_array, MYSQLI_ASSOC);
+
+	//print_r($get_ordered_books_result);
 
 	//if user clicks the log out button
 	if(isset($_POST['Log_Out'])) {
@@ -71,6 +73,10 @@
 		text-align: center;
 	}
 
+	.submit-button-class {
+		margin-top: 5px;
+	}
+
 </style>
 <body>
 
@@ -85,8 +91,21 @@
 				<h2 style="margin-top: 20px; margin-bottom:7px;"><?php echo $user_details_result['0']['First_Name'] . ' ' . $user_details_result['0']['Last_Name']; ?></h2>
 				<hr style="margin-bottom: 20px;">
 				<p style="font-size: 18px; margin-top: 4px; margin-bottom:7px;"><b>E-mail address: </b><?php echo $user_details_result['0']['E_mail']; ?></p>
-				<p style="font-size: 18px; margin-top: 4px; margin-bottom:7px;"><b>Batch number: </b><?php echo $user_batch_details_result['0']['Batch_No']; ?></p>
-				<p style="font-size: 18px; margin-top: 4px; margin-bottom:7px;"><b>Library ID number: </b><?php echo $user_batch_details_result['0']['Library_User_Id']; ?></p>
+				<p style="font-size: 18px; margin-top: 4px; margin-bottom:7px;"><b>Ordered Books: </b> <br>
+					<?php foreach($get_ordered_books_result as $Ordered_Books) { ?>
+						<?php 
+							//taking the details from the table book_name_author
+							$Book_Id = $Ordered_Books['Book_Order_Id'];
+							$sql_getting_details_book_name_author = "SELECT * FROM book_name_author WHERE Book_Id = '$Book_Id'";
+							$sql_details_result_book_name_author = mysqli_query($conn, $sql_getting_details_book_name_author);
+							$sql_data_array_book_name_author = mysqli_fetch_all($sql_details_result_book_name_author, MYSQLI_ASSOC);
+							//print_r($sql_data_array_book_name_author);
+
+							$Ordered_Book_Name = $sql_data_array_book_name_author['0']['Book_Name'];
+							echo $Ordered_Book_Name;
+						?> <br>
+					<?php } ?>	
+				</p>
 			</div>
 			<div class="grid-container-buttons">
 			<form action="My_Account.php" method="POST">
