@@ -102,8 +102,8 @@
 							//print_r($sql_data_array_book_name_author);
 
 							$Ordered_Book_Name = $sql_data_array_book_name_author['0']['Book_Name'];
-							echo $Ordered_Book_Name;
-						?> <br>
+							echo $Ordered_Book_Name;   
+						?>  <a href="Cancel_The_Order.php?id=<?php echo $Book_Id; ?>" style="color: red;">CANCEL THE ORDER</a> <br>
 					<?php } ?>	
 				</p>
 			</div>

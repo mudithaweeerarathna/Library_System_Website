@@ -9,7 +9,7 @@
 
 	//check if the user is logged in or not
 	if(empty($User_email)) {
-		header("location: https://localhost/Web%20assignment/Library_System_Website/Redirect_Page.php");
+		header("location: https://localhost/Library_System_Website/Redirect_Page.php");
 	}
 	else {
 	//getting the details from the database
