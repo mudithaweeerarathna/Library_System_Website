@@ -61,7 +61,19 @@
 <head>
 	<meta charset="utf-8">
 	<title>Log in</title>
-</head>
+
+<script type="text/javascript">
+  
+  function Submit()
+  {
+    if(document.login.password.value.length<6)
+    {
+      window.alert("You have to enter minimum of 6 characters!");
+      return;
+    }
+  }
+
+</script>
 
 <style>
 
@@ -98,7 +110,7 @@
   margin-bottom: 150px;
 }
 </style>
-
+</head>
 
 <body>
 
@@ -126,7 +138,7 @@
 <h2 style="text-align: center; color: red;"><b><?php echo $error_email; ?></b></h2>
 
 <div class="container">
-  <form action="Log_in_Web_Page.php" method="POST">
+  <form action="Log_in_Web_Page.php" method="POST" name="login">
     <label for="fname">E-mail</label>
     <input type="email" class="enter-field" name="email" placeholder="Enter your e-mail">
 
@@ -134,7 +146,7 @@
     <input type="password" class="enter-field" name="password" placeholder="Enter your password">
     <label style="color: red;"><?php echo $password_error; ?></label>
 
-    <input class="submit-button" type="submit" name="submit" value="Submit">
+    <input class="submit-button" type="submit" name="submit" value="Submit" onclick="Submit()">
   </form>
 </div>
 
