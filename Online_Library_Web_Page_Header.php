@@ -122,18 +122,18 @@ a
   font-size: 17px;
 }
 
-.span1
+.span_p_1
 {
   font-family: crimson text;
   font-size: 50px;
   font-weight: bold:;
-  color: white;
+  color: white; 
 }
-.span2
+.span_p_2
 {
   font-family: cambria;
   font-size: 14px;
-  color: white;
+  color: white; 
 }
 
 </style>
@@ -147,7 +147,7 @@ a
   </div>
 
 <div class="grid-container-name">
-    <p><span class="span1">ONLINE LIBRARY</span><br><span class="span2">Created by NSBM Green University Students</span></p> 
+    <p><span class="span_p_1">ONLINE LIBRARY</span><br><span class="span_p_2">Created by NSBM Green University Students</span></p> 
   
   </div>
   <div class="grid-container-accounts">
