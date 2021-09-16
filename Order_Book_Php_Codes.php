@@ -86,7 +86,7 @@
 
 	<?php include 'Online_Library_Web_Page_Header.php'; ?>
 
-	<h4 class="submit-button-class"><a href="Order_Online.php">Click to go back to the order book page</a></h4>
+	<h4 class="submit-button-class"><a href="Order_Online.php">CLICK TO GO BACK TO THE ORDER BOOK PAGE TO ORDER ANOTHER BOOK</a></h4>
 
 </body>
 </html>
