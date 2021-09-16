@@ -13,7 +13,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Lobster&display=swap" rel="stylesheet">
 <style>
 	body {
-  		font-family: Crimson Text;
+  		font-family: Crimson Text;/**/ 
 	}
 
 	.icons {
