@@ -164,7 +164,7 @@ a
 
     ?>
 
-      <h3 class="signlogin"><div><a href="Sign_in_Web_Page.php" class="grid-container-accounts-link">Sign in</a></div></h3>
+      <h3 class="signlogin"><div><a href="Sign_in_Web_Page.php" class="grid-container-accounts-link">Sign up</a></div></h3>
 
       <h3 class="signlogin"><div><a href="<?php echo $log_in_out_href_link; ?>" class="grid-container-accounts-link"><?php echo $log_in_out_h3; ?></a></div></h3>
   </div>

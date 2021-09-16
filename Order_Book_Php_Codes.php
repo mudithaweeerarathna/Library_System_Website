@@ -22,11 +22,33 @@
 		//taking the book number need to order from the library
 		$Book_Id = $_GET['id'];
 
-		//input the data into the tables in database
-		$enter_details = "INSERT INTO user_book_order(User_Id, Book_Order_id) VALUES ('$User_Id', '$Book_Id')";
-		mysqli_query($conn, $enter_details);
+		//check if the user is already ordered the book
+		$check_table_sql = "SELECT Book_Order_id FROM user_book_order WHERE User_Id = '$User_Id'";
+		$check_table_query = mysqli_query($conn, $check_table_sql);
+		$check_table_result = mysqli_fetch_all($check_table_query, MYSQLI_ASSOC);
 
-		header("location: https://localhost/Library_System_Website/My_Account.php");	
+		//print_r($check_table_result);
+
+		foreach($check_table_result as $check_book) {
+			if($Book_Id == $check_book['Book_Order_id']) {
+				$already_ordered = TRUE;
+				break;
+			} else {
+				$already_ordered = FALSE;
+			}
+		}
+
+		if($already_ordered == TRUE) {
+			echo '<script>alert("you already ordered the book")</script>';
+		} else {
+
+		}
+
+		//input the data into the tables in database
+		//$enter_details = "INSERT INTO user_book_order(User_Id, Book_Order_id) VALUES ('$User_Id', '$Book_Id')";
+		//mysqli_query($conn, $enter_details);
+
+		//header("location: https://localhost/Library_System_Website/My_Account.php");	
 	}
 
 
@@ -40,3 +62,28 @@
 
 
 ?>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<style>
+	
+	.submit-button-class {
+		margin-right: 300px;
+		margin-left: 300px;
+		text-align: center;
+	}
+
+</style>
+<body>
+
+	<?php include 'Online_Library_Web_Page_Header.php'; ?>
+
+	<h4 class="submit-button-class"><a href="">Click to go back to the order book page</a></h4>
+
+</body>
+</html>
