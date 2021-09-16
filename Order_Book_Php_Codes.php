@@ -1,5 +1,5 @@
 <?php  
-	//wems klaaa
+	
 	$conn = mysqli_connect("localhost", "root", "", "library_database");
 
 	//start the session to take the user id
