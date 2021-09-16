@@ -1,17 +1,19 @@
 <?php
+
+  //creating the connection to the database and check the connection
   $conn = mysqli_connect("localhost", "root", "", "library_database");
-  
   if(!$conn) {
     echo 'connection error to the database';
   }
 
-  //array to store the entered data
+  //array to store the errors that is occured by the entered data
   $submit_error = '';
 
+  //code snippet that runs when the user click the submit button after entering the data to the form
   if(isset($_POST['submit'])) {
 	
   	//save the firstname to data array
-  	$F_name = mysqli_real_escape_string($conn, $_POST['firstname']);
+  	$F_name = mysqli_real_escape_string($conn, $_POST['firstname']); 
 
   	//save the secondname to data entry
   	$L_name = mysqli_real_escape_string($conn, $_POST['lastname']);

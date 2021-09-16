@@ -1,5 +1,6 @@
 <?php  
-
+	
+	//starting the inbuit function session to check if the user is loged in or not
 	session_start();
 
 ?>
