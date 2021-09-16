@@ -53,6 +53,18 @@
     window.alert("You have to enter minimum of 6 characters!");
     return;
   }
+
+  if(document.signup.StudentId.value.length<6)
+  {
+    window.alert("You have to enter minimum of 6 characters!");
+    return;
+  }
+
+  if(document.signup.firstname.value=="" || document.signup.lastname.value=="" || document.signup.StudentId.value=="" || document.signup.email.value=="" || document.signup.password.value=="")
+  {
+    window.alert("You have to enter minimum of 6 characters!");
+    return;
+  }
 </script>
 
 <style>
