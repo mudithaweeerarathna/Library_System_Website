@@ -46,7 +46,14 @@
 <head>
   <meta charset="utf-8">
   <title>Sign In</title>
-</head>
+
+<script type="text/javascript">
+  if(document.signup.password.value.length<6)
+  {
+    window.alert("You have to enter minimum of 6 characters!");
+    return;
+  }
+</script>
 
 <style>
 
@@ -83,7 +90,7 @@
   margin-bottom: 100px;
 }
 </style>
-
+</head>
 
 <body>
 
@@ -93,7 +100,7 @@
 <h3 style="text-align: center;">Sign Up</h3>
 
 <div class="container">
-  <form action="Sign_in_Web_Page.php" method="POST">
+  <form action="Sign_in_Web_Page.php" method="POST" name="signup">
 
     <label for="fname">Enter your first name</label>
     <input type="text" class="enter-field" name="firstname" placeholder="Enter your First name">
@@ -112,7 +119,7 @@
 
     <label style="color: red;"><?php echo $submit_error; ?></label>
 
-    <input class="submit-button" type="submit" name="submit" value="Submit">
+    <input class="submit-button" type="submit" name="submit" value="Submit" onclick="Signup()">
   </form>
 </div>
 
