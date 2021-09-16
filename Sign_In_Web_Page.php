@@ -1,5 +1,5 @@
 <?php  
-
+  $validateTrue=1;
   $conn = mysqli_connect("localhost", "root", "", "library_database");
   
   if(!$conn) {
@@ -28,7 +28,11 @@
 
     if(empty($F_name) || empty($L_name) || empty($email) || empty($password) || empty($StudentId)) {
       $submit_error = 'Fields are empty';
-    } else {
+    } else if($validateTrue=1){
+      $submit_error = 'Input Error';
+    }
+    else {
+      echo '';
       //enter the data to database table user_details
       $enter_detils_table = "INSERT INTO user_details(User_Id, First_Name, Last_Name, E_mail, Password) VALUES('$StudentId', '$F_name', '$L_name', '$email', '$password')";
       mysqli_query($conn, $enter_detils_table);
@@ -48,22 +52,32 @@
   <title>Sign In</title>
 
 <script type="text/javascript">
+  function Signup(){
+  if(isNaN(document.signup.StudentId.value)){
+    window.alert("Invalid Student ID");
+    <?php $validateTrue=0;?>
+    return
+  }
   if(document.signup.password.value.length<6)
   {
     window.alert("You have to enter minimum of 6 characters!");
+    <?php $validateTrue=0;?>
     return;
   }
 
   if(document.signup.StudentId.value.length<6)
   {
     window.alert("You have to enter minimum of 6 characters!");
+    <?php $validateTrue=0;?>
     return;
   }
 
   if(document.signup.firstname.value=="" || document.signup.lastname.value=="" || document.signup.StudentId.value=="" || document.signup.email.value=="" || document.signup.password.value=="")
   {
     window.alert("You have to enter minimum of 6 characters!");
+    <?php $validateTrue=0;?>
     return;
+  }
   }
 </script>
 
