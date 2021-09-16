@@ -41,14 +41,13 @@
 		if($already_ordered == TRUE) {
 			echo '<script>alert("you already ordered the book")</script>';
 		} else {
+			//input the data into the tables in database
+			$enter_details = "INSERT INTO user_book_order(User_Id, Book_Order_id) VALUES ('$User_Id', '$Book_Id')";
+			mysqli_query($conn, $enter_details);
 
+			header("location: https://localhost/Library_System_Website/My_Account.php");
 		}
-
-		//input the data into the tables in database
-		//$enter_details = "INSERT INTO user_book_order(User_Id, Book_Order_id) VALUES ('$User_Id', '$Book_Id')";
-		//mysqli_query($conn, $enter_details);
-
-		//header("location: https://localhost/Library_System_Website/My_Account.php");	
+	
 	}
 
 
@@ -83,7 +82,7 @@
 
 	<?php include 'Online_Library_Web_Page_Header.php'; ?>
 
-	<h4 class="submit-button-class"><a href="">Click to go back to the order book page</a></h4>
+	<h4 class="submit-button-class"><a href="Order_Online.php">Click to go back to the order book page</a></h4>
 
 </body>
 </html>
