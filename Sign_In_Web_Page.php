@@ -33,7 +33,7 @@
       $enter_detils_table = "INSERT INTO user_details(User_Id, First_Name, Last_Name, E_mail, Password) VALUES('$StudentId', '$F_name', '$L_name', '$email', '$password')";
       mysqli_query($conn, $enter_detils_table);
 
-      header("location: https://localhost/Library_System_Website/Log_In_Web_Page.php");
+      header("location: https://localhost/Library_System_Website/Sign_in_Success.php");
 
     }
   }

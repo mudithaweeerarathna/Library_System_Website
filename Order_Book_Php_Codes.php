@@ -5,7 +5,7 @@
 	//start the session to take the user id
 	session_start();
 	$User_email = $_SESSION['user_email'];
-
+	$count = 1;
 
 	//check if the user is logged in or not
 	if(empty($User_email)) {
@@ -36,10 +36,14 @@
 			} else {
 				$already_ordered = FALSE;
 			}
+
+			$count = $count + 1;
 		}
 
 		if($already_ordered == TRUE) {
 			echo '<script>alert("you already ordered the book")</script>';
+		} elseif($count > 4) {
+			echo '<script>alert("you cant order more than 4 books")</script>';			
 		} else {
 			//input the data into the tables in database
 			$enter_details = "INSERT INTO user_book_order(User_Id, Book_Order_id) VALUES ('$User_Id', '$Book_Id')";
