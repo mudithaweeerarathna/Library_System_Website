@@ -59,13 +59,7 @@
 	<div class="grid-container-sections">
 		<h3>Other</h3>
 		<p>
-			other details that need to include 
-			in the website Lorem ipsum dolor sit 
-			amet, consectetur adipisicing elit, 
-			sed do eiusmod tempor incididunt ut 
-			labore et dolore magna aliqua. Ut 
-			enim ad minim veniam, quis nostrud exe
-			rcitation ullamco laboris nisi ut a
+			We thank our lecturer S. Naji for<br>giving us this opportunity<br> and we’re hoping host this and develop<br> this project more in the future,<br>it will be the first digital library in Sri Lanka
 		</p>
 	</div>
 
